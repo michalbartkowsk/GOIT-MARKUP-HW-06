@@ -1,0 +1,39 @@
+:root {
+  --active-color: #2196f3;
+  --dark-theme: #000000;
+  --primary-text-color: #212121;
+  --primary-bg-color: #ffffff;
+  --secondary-text-color: #757575;
+  --secondary-bg-color: #f5f4fa;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  line-height: 1.19;
+  color: var(--dark-theme);
+}
+
+.logo-active {
+  color: var(--active-color);
+}
