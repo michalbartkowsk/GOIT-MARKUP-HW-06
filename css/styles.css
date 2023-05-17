@@ -147,6 +147,8 @@ a {
 
 /* P O R T F O L I O  */
 
+/* buttons */
+
 .pf-btn {
   width: 121px;
   height: 38px;
@@ -156,4 +158,20 @@ a {
   text-align: center;
   color: var(--primary-bg-color);
   background-color: var(--active-color);
+}
+
+/* images */
+
+.options-heading {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.options-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.88;
+  color: var(--secondary-text-color);
 }
