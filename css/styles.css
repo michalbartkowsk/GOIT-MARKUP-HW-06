@@ -88,6 +88,7 @@ a {
   line-height: 1.88;
   letter-spacing: 0.06em;
   text-align: center;
+  cursor: pointer;
   color: var(--primary-bg-color);
   background-color: var(--active-color);
   border-style: none;
@@ -156,6 +157,13 @@ a {
   font-weight: 500;
   line-height: 1.63;
   text-align: center;
+  cursor: pointer;
+  color: var(--primary-text-color);
+  background-color: var(--secondary-bg-color);
+}
+
+.pf-btn:hover,
+.pf-btn:focus {
   color: var(--primary-bg-color);
   background-color: var(--active-color);
 }
