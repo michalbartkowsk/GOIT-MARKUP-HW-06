@@ -132,6 +132,17 @@ a {
   background-color: var(--tertiary-bg-color);
 }
 
+.logo-pf {
+  font-family: "Raleway";
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--primary-bg-color);
+}
+
+.logo-pf-active {
+  color: var(--active-color);
+}
+
 .footer-headquarters {
   font-size: 14px;
   font-weight: 400;
