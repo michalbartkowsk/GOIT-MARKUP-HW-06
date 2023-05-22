@@ -11,9 +11,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  font-weight: 700;
   letter-spacing: 0.03em;
-  line-height: 1.71;
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
 }
@@ -85,8 +83,10 @@ a {
   width: 200px;
   height: 50px;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  font-family: inherit;
   text-align: center;
   cursor: pointer;
   color: var(--primary-bg-color);
@@ -96,8 +96,13 @@ a {
 
 /* SOLUTIONS */
 
+.solutions-heading {
+  letter-spacing: 0.03em;
+}
+
 .solutions-text {
   font-weight: 400;
+  line-height: 1.71;
   color: var(--secondary-text-color);
 }
 
@@ -113,16 +118,22 @@ a {
 
 /* OUR TEAM */
 
+.team {
+  background-color: var(--secondary-bg-color);
+}
+
 .team-name {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 .team-description {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.17;
+  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
