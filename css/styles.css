@@ -31,6 +31,7 @@ a {
   font-family: "Raleway";
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   color: var(--dark-theme);
 }
 
@@ -147,6 +148,7 @@ a {
   font-family: "Raleway";
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   color: var(--primary-bg-color);
 }
 
@@ -157,6 +159,8 @@ a {
 .footer-headquarters {
   font-size: 14px;
   font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.71;
   font-style: normal;
   color: var(--primary-bg-color);
 }
@@ -164,6 +168,8 @@ a {
 .footer-contact-link {
   font-size: 14px;
   font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.71;
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -178,6 +184,8 @@ a {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.63;
+  letter-spacing: 0.03em;
+  font-family: inherit;
   text-align: center;
   cursor: pointer;
   color: var(--primary-text-color);
@@ -203,5 +211,6 @@ a {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.88;
+  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
