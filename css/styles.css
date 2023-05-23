@@ -14,10 +14,24 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
+  margin: 0;
+  padding: 0;
 }
 
-ul,
-li {
+header {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -25,13 +39,36 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  /* all elements are separated from the container's border with 15px padding value  */
+  padding: 0 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* HEADER */
 
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  padding-top: 24px;
+  padding-bottom: 25px;
   color: var(--dark-theme);
 }
 
@@ -39,22 +76,46 @@ a {
   color: var(--active-color);
 }
 
-.nav-list {
+.nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.nav .nav-menu:not(:last-child) {
+  margin-right: 46px;
+}
+
+.nav-menu {
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.14;
   color: var(--primary-text-color);
 }
 
-.nav-list:hover,
-.nav-list:focus,
+.nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.nav-link:hover,
+.nav-link:focus,
 .contact-link:hover,
 .contact-link:focus {
   color: var(--active-color);
 }
 
-.nav-list-active {
+.nav-link-active {
   color: var(--active-color);
+}
+
+.contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact .contact-list:not(:last-child) {
+  margin-right: 50px;
 }
 
 .contact-link {
@@ -67,10 +128,15 @@ a {
 /* HERO */
 
 .hero {
+  text-align: center;
+  padding: 200px 0px;
   background-color: var(--tertiary-bg-color);
 }
 
 .hero-heading {
+  max-width: 696px;
+  text-align: center;
+  margin: 0 auto;
   text-transform: uppercase;
   font-size: 44px;
   font-weight: 900;
@@ -81,8 +147,7 @@ a {
 }
 
 .hero-btn {
-  width: 200px;
-  height: 50px;
+  margin-top: 30px;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.88;
@@ -90,12 +155,19 @@ a {
   font-family: inherit;
   text-align: center;
   cursor: pointer;
+  padding: 10px 42px 10px 41px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   color: var(--primary-bg-color);
   background-color: var(--active-color);
   border-style: none;
 }
 
 /* SOLUTIONS */
+
+.solutions {
+  padding-bottom: 0px;
+}
 
 .solutions-heading {
   letter-spacing: 0.03em;
@@ -145,7 +217,7 @@ a {
 }
 
 .logo-pf {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
