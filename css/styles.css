@@ -223,7 +223,7 @@ img {
   justify-content: center;
 }
 
-.activity-item {
+.activity-item:not(:last-child) {
   margin-right: 30px;
 }
 
