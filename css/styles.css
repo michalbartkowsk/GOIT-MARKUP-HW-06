@@ -148,9 +148,10 @@ img {
 
 .hero {
   text-align: center;
-  max-width: 1600px;
+  width: 1600px;
   height: 600px;
   padding: 200px 0;
+  margin: 0 auto;
   background-color: var(--tertiary-bg-color);
   background-image: radial-gradient(
       circle,
@@ -244,7 +245,8 @@ img {
 /* WHAT WE DO */
 
 .activity-heading,
-.team-heading {
+.team-heading,
+.clients-heading {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
@@ -283,7 +285,7 @@ img {
   margin-right: 30px;
 }
 
-.team-item .team-info {
+.team-info {
   text-align: center;
   padding: 30px 0;
 }
@@ -302,6 +304,72 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+
+.team-svg-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.team-svg-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  height: 44px;
+  width: 44px;
+  border-radius: 50px;
+}
+
+.team-svg-item:last-child {
+  margin-right: 0px;
+}
+
+.team-svg-item:hover,
+.team-svg-item:focus {
+  background-color: var(--active-color);
+}
+
+.team-svg-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-svg-icon {
+  cursor: pointer;
+  fill: #afb1b8;
+}
+
+.team-svg-item:hover .team-svg-icon,
+.team-svg-item:focus .team-svg-icon {
+  fill: var(--primary-bg-color);
+}
+
+/* CLIENTS */
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-box {
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  padding: 17px 32px 14px 32px;
+  cursor: pointer;
+  border: 1px solid #afb1b8;
+}
+
+.clients-svg {
+  fill: #afb1b8;
 }
 
 /* FOOTER */
