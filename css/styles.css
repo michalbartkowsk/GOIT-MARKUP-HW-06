@@ -332,14 +332,14 @@ img {
   background-color: var(--active-color);
 }
 
-.team-svg-link {
+.team-svg-link,
+.footer-svg-link {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .team-svg-icon {
-  cursor: pointer;
   fill: #afb1b8;
 }
 
@@ -484,6 +484,10 @@ img {
   background-color: var(--active-color);
 }
 
+.footer-svg-icon {
+  fill: var(--primary-bg-color);
+}
+
 /* P O R T F O L I O  */
 
 /* buttons */
@@ -493,6 +497,13 @@ img {
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
+}
+
+.pf-btn-item:hover,
+.pf-btn-item:focus {
+  border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .pf-btn {
@@ -522,6 +533,13 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.options-item:hover,
+.options-item:focus {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .options-border {
