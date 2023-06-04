@@ -113,8 +113,34 @@ img {
   color: var(--active-color);
 }
 
-.nav-link-active {
+.nav-link-active,
+.nav-link-active-pf {
   color: var(--active-color);
+  position: relative;
+}
+
+.nav-link-active::after {
+  position: absolute;
+  content: "";
+  width: 53px;
+  height: 4px;
+  border-radius: 2px;
+  top: 46px;
+  left: 0;
+  display: block;
+  background-color: var(--active-color);
+}
+
+.nav-link-active-pf::after {
+  position: absolute;
+  content: "";
+  width: 58px;
+  height: 4px;
+  border-radius: 2px;
+  top: 46px;
+  left: 0;
+  display: block;
+  background-color: var(--active-color);
 }
 
 .contact {
