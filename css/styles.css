@@ -113,34 +113,8 @@ img {
   color: var(--active-color);
 }
 
-.nav-link-active,
-.nav-link-active-pf {
+.nav-link-active {
   color: var(--active-color);
-  position: relative;
-}
-
-.nav-link-active::after {
-  position: absolute;
-  content: "";
-  width: 53px;
-  height: 4px;
-  border-radius: 2px;
-  top: 46px;
-  left: 0;
-  display: block;
-  background-color: var(--active-color);
-}
-
-.nav-link-active-pf::after {
-  position: absolute;
-  content: "";
-  width: 58px;
-  height: 4px;
-  border-radius: 2px;
-  top: 46px;
-  left: 0;
-  display: block;
-  background-color: var(--active-color);
 }
 
 .contact {
@@ -157,17 +131,13 @@ img {
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.14;
+  display: flex;
   color: var(--secondary-text-color);
 }
 
 .contact-svg {
-  fill: var(--secondary-text-color);
+  fill: currentColor;
   margin-right: 10px;
-}
-
-.contact-link:hover .contact-svg,
-.contact-link:focus .contact-svg {
-  fill: var(--active-color);
 }
 
 /* HERO */
@@ -184,7 +154,7 @@ img {
       rgba(234, 234, 236, 0.26) 0%,
       rgba(25, 25, 26, 0.4) 100%
     ),
-    url(/images/background-image.jpg);
+    url(../images/background-image.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -245,7 +215,9 @@ img {
   height: 120px;
   border-radius: 4px;
   background-color: var(--secondary-bg-color);
-  padding: 25px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .solutions-svg {
@@ -285,8 +257,29 @@ img {
   justify-content: center;
 }
 
+.activity-item {
+  position: relative;
+}
+
 .activity-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.activity-text {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  width: 100%;
+  height: 70px;
+  color: var(--primary-bg-color);
+  background: rgba(47, 48, 58, 0.8);
 }
 
 /* OUR TEAM */
@@ -343,19 +336,16 @@ img {
   justify-content: center;
   align-items: center;
   margin-right: 10px;
-  height: 44px;
-  width: 44px;
-  border-radius: 50px;
-  cursor: pointer;
 }
 
 .team-svg-item:last-child {
   margin-right: 0px;
 }
 
-.team-svg-item:hover,
-.team-svg-item:focus {
+.team-svg-link:hover,
+.team-svg-link:focus {
   background-color: var(--active-color);
+  color: var(--primary-bg-color);
 }
 
 .team-svg-link,
@@ -363,15 +353,14 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
 }
 
 .team-svg-icon {
-  fill: #afb1b8;
-}
-
-.team-svg-item:hover .team-svg-icon,
-.team-svg-item:focus .team-svg-icon {
-  fill: var(--primary-bg-color);
+  fill: currentColor;
 }
 
 /* CLIENTS */
@@ -382,31 +371,33 @@ img {
   align-items: center;
 }
 
-.clients-item {
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border-radius: 4px;
-  padding: 17px 32px 14px 32px;
-  cursor: pointer;
-  border: 1px solid #afb1b8;
+  border: 1px solid currentColor;
+  color: #afb1b8;
 }
 
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-item:hover,
-.clients-item:focus {
-  border: 1px solid var(--active-color);
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--active-color);
 }
 
-.clients-item:hover .clients-svg,
-.clients-item:focus .clients-svg {
+.clients-link:hover .clients-svg,
+.clients-link:focus .clients-svg {
   fill: var(--active-color);
 }
 
 .clients-svg {
-  fill: #afb1b8;
+  fill: currentColor;
 }
 
 /* FOOTER */
