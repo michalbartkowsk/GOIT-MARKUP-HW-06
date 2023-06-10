@@ -111,6 +111,7 @@ img {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--active-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link-active,
@@ -220,6 +221,7 @@ img {
   color: var(--dark-theme);
   background-color: var(--primary-bg-color);
   transform: scale(1.1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* SOLUTIONS */
@@ -372,6 +374,7 @@ img {
 .team-svg-link:focus {
   background-color: var(--active-color);
   color: var(--primary-bg-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-svg-link,
@@ -415,11 +418,13 @@ img {
 .clients-link:hover,
 .clients-link:focus {
   color: var(--active-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover .clients-svg,
 .clients-link:focus .clients-svg {
   fill: var(--active-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-svg {
@@ -464,6 +469,7 @@ img {
 .footer-contact-link:hover,
 .footer-contact-link:focus {
   color: var(--primary-bg-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-headquarters {
@@ -525,6 +531,7 @@ img {
 .footer-svg-item:hover,
 .footer-svg-item:focus {
   background-color: var(--active-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-svg-icon {
@@ -564,6 +571,12 @@ img {
   background-color: #fff;
 }
 
+.close-btn:hover,
+.close-btn:focus {
+  opacity: 0.7;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -583,9 +596,9 @@ img {
 
 .pf-btn-item:hover,
 .pf-btn-item:focus {
-  border-radius: 4px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .pf-btn {
@@ -607,6 +620,7 @@ img {
 .pf-btn:focus {
   color: var(--primary-bg-color);
   background-color: var(--active-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* images grid */
@@ -622,7 +636,41 @@ img {
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* options overlay */
+
+.options-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.options-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #2196f3e5;
+
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.options-item:hover .options-overlay {
+  transform: translateY(0);
+}
+
+.options-overlay p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+  padding: 49px 45px 49px 24px;
+  color: var(--primary-bg-color);
+}
+
+/* options overlay end */
 
 .options-border {
   border: 1px solid var(--pf-img-border);
